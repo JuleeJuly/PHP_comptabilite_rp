@@ -1,0 +1,124 @@
+div.cont_inline{
+  color:#042838;
+}
+div.cont_inline_center{
+  background: #f7f7f7;
+}
+button,.button{
+    background: #2a596e;
+}
+button,.button{
+    color: white;
+}
+button,.button:hover{
+    background: #042838;
+}
+
+
+/*FIXE*/
+table th,.input_hidden{
+  color: #f7f7f7;
+}
+table{
+  background: #f7f7f7;
+}
+
+/*MODIF*/
+
+.impair{
+  background:#7396a5;
+}
+table,.total_present_day_war{
+    color:#042838;
+}
+table td{
+  border-left:1px solid #134053!important;
+}
+table th,.input_hidden,.info_mobile h2{
+  background: #134053;
+}
+.stats_mobile .a,.tableau_compta th,.bouton_plus:hover,.boutonCroix:hover,.bouton:hover,button:hover,input[type="checkbox"]:checked {
+  background: #042838;
+}
+.tableau_pm tr,.tableau_pm td,input[type=checkbox] {
+  border: 1px solid #2a596e;
+}
+
+/*******MODIF*****/
+#id_connexion label,.tableau_compta_acceuil td,.cl_tab_stock,.cl_tab_garage,.cl_tab_annuaire,.tab_tarif td input,.tab_tarif th input,.stats_mobile .p4,.stats_mobile .p5,.stats_mobile .o4,.stats_mobile .o5,.stats_mobile .n4,.stats_mobile .n5,.stats_mobile .m4,.stats_mobile .m5,.stats_mobile .l4,.stats_mobile .l5,.stats_mobile .k4,.stats_mobile .k5,.stats_mobile .j4,.stats_mobile .j5,.stats_mobile .i4,.stats_mobile .i5,.stats_mobile .h5,.stats_mobile .h4,.stats_mobile .g5,.stats_mobile .g4,.stats_mobile .f5,.stats_mobile .f4,.stats_mobile .e5,.stats_mobile .e4,.stats_mobile .b4, .stats_mobile .b5,.stats_mobile .c4,.stats_mobile .c5,.stats_mobile .d4,.stats_mobile .d5,.transac_mobile, .info_mobile,.compte_total,.form_ajout label,.tablePaiement,.membre,.tab_tarif td,.cl_tab_delit td,.cl_tab_gestion_compte,.table_total_compta,.perso_mobile .h2,.perso_mobile .h3,.perso_mobile .g2,.perso_mobile .g3,.perso_mobile .f2,.perso_mobile .f3,.perso_mobile .b2,.perso_mobile .b3,.perso_mobile .c2,.perso_mobile .c3,.perso_mobile .d2,.perso_mobile .d3,.perso_mobile .e3,.perso_mobile .e2,.stats_mobile .z1,.stats_mobile .z2,.stats_mobile .y1,.stats_mobile .x1, .stats_mobile .w1, .stats_mobile .v1,.stats_mobile .y2,.stats_mobile .x2, .stats_mobile .w2, .stats_mobile .v2,.transac_groupe_divers,.table_poche tr>th:first-of-type,.tableau_compta,.cl_tab_comptabilite,h2,select,input,.content,.present:checked ~ .content,.objectif,.table_perso_recel{
+  color:#042838;
+}
+.a,.bouton_plus,.tableau_compta_acceuil th,.pochepair,button,.bouton,.boutonCroix{
+  background: #2a596e;
+}
+.perso_mobile .a0,.af,.tablePaiement th,.cl_tab_stock th,.cl_tab_annuaire th,.tab_tarif th,.cl_tab_delit tr:nth-of-type(1) th, .cl_tab_delit tr:nth-of-type(2) th,.cl_tab_gestion_compte th,.table_total_compta tr:first-of-type th,.cl_tab_comptabilite th,.table_perso_recel tr:first-of-type th{
+  background: #134053;
+}
+
+
+.tablePaiement td.separationPaiement{
+  border-left:1px solid #134053!important;
+}
+.tab_tarif .separationBas,.cl_tab_stock tr.changementType td{
+  border-top:1px solid #042838;
+}
+select,input,.tab_tarif td input,.tab_tarif th input,.perso_mobile .h2,.perso_mobile .h3,.perso_mobile .g2,.perso_mobile .g3,.perso_mobile .f2,.perso_mobile .f3,.perso_mobile .b2,.perso_mobile .b3,.perso_mobile .c2,.perso_mobile .c3,.perso_mobile .d2,.perso_mobile .d3,.perso_mobile .e3,.perso_mobile .e2,.stats_mobile .z1,.stats_mobile .z2,.stats_mobile .y1,.stats_mobile .x1, .stats_mobile .w1, .stats_mobile .v1,.stats_mobile .y2,.stats_mobile .x2, .stats_mobile .w2, .stats_mobile .v2{
+  border:1px solid #042838;   
+}
+hr{
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(42,89,110), rgba(0, 0, 0, 0));
+}
+
+
+/*******FIXE******/
+
+
+.bouton_plus:hover,.pair,.boutonCroix,.bouton,button:hover{
+  color: white;
+}
+.cl_tab_garage th,.cl_tab_annuaire th,.tablePaiement th,.stats_mobile .a,.c1,.c2,.c3,.a,.af,.info_mobile h2,.perso_mobile .a0,.perso_mobile .a1,.perso_mobile .a2,.perso_mobile .a3,.perso_mobile .a4,.perso_mobile .b1,.perso_mobile .c1,.perso_mobile .d1,.perso_mobile .e1,.perso_mobile .f1,.perso_mobile .g1,.perso_mobile .h1,.perso_mobile .i2,.perso_mobile .j2,.cl_tab_stock th,.tab_tarif th,.cl_tab_delit th,.cl_tab_gestion_compte th,.table_total_compta th,.transac_supprime,.transac_valide,.bouton_plus,.pochepair,.transac_groupe,.tableau_compta_acceuil th,.tableau_compta th,.cl_tab_comptabilite th,.table_perso_recel th,.date,h1,button{
+  color: #f7f7f7;
+}
+.transac_debit,.debit,.perso_mobile .j3,.perso_mobile .i3,.perso_mobile .h4,.perso_mobile .b4,.perso_mobile .c4,.perso_mobile .d4,.perso_mobile .e4,.perso_mobile .f4,.perso_mobile .g4{
+  color: #408e2f;
+}
+.transac_credit,.stats_mobile .c3,.stats_mobile .d3,.stats_mobile .e3,.stats_mobile .f3,.stats_mobile .g3,.stats_mobile .h3,.stats_mobile .i3,.stats_mobile .j3,.stats_mobile .k3,.stats_mobile .l3,.stats_mobile .m3,.stats_mobile .n3,.stats_mobile .o3,.stats_mobile .p3,.alerte{
+  color:red;
+}
+.recidive{
+  color:red!important;
+}
+.stats_mobile .z1,.stats_mobile .z2,.stats_mobile .y1,.stats_mobile .x1, .stats_mobile .w1, .stats_mobile .v1,.stats_mobile .y2,.stats_mobile .x2, .stats_mobile .w2, .stats_mobile .v2,.perso_mobile .h2,.perso_mobile .h3,.perso_mobile .g2,.perso_mobile .g3,.perso_mobile .f2,.perso_mobile .f3,.perso_mobile .b2,.perso_mobile .b3,.perso_mobile .c2,.perso_mobile .c3,.perso_mobile .d2,.perso_mobile .d3,.perso_mobile .e3,.perso_mobile .e2,.stats_mobile .p4,.stats_mobile .p5,.stats_mobile .o4,.stats_mobile .o5,.stats_mobile .n4,.stats_mobile .n5,.stats_mobile .m4,.stats_mobile .m5,.stats_mobile .l4,.stats_mobile .l5,.stats_mobile .k4,.stats_mobile .k5,.stats_mobile .j4,.stats_mobile .j5,.stats_mobile .i4,.stats_mobile .i5,.stats_mobile .h5,.stats_mobile .h4,.stats_mobile .g5,.stats_mobile .g4,.stats_mobile .f5,.stats_mobile .f4,.stats_mobile .e5,.stats_mobile .e4,.stats_mobile .b4, .stats_mobile .b5,.stats_mobile .c4,.stats_mobile .c5,.stats_mobile .d4,.stats_mobile .d5,.transac_mobile, .info_mobile,.compte_total,.membre,.cl_tab_annuaire,.cl_tab_garage,.cl_tab_stock,.tab_tarif td,.table_total_compta,.cl_tab_delit,.tab_tarif,.tablePaiement,.pochetotal,.tableau_compta_acceuil,.cl_tab_comptabilite,.tableau_compta,.table_perso_recel,div.disp_inline_perso,.present:checked ~ .content,.objectif,div.disp_inline_connexion,div.disp_inline_bis,.content,input[type=checkbox] {
+  background: #f7f7f7;
+}
+.perso_mobile .j3,.perso_mobile .i3,.perso_mobile .h4,.perso_mobile .b4,.perso_mobile .c4,.perso_mobile .d4,.perso_mobile .e4,.perso_mobile .f4,.perso_mobile .g4,.perso_mobile .a0,.perso_mobile .a1,.perso_mobile .a2,.perso_mobile .a3,.perso_mobile .a4,.perso_mobile .b1,.perso_mobile .c1,.perso_mobile .d1,.perso_mobile .e1,.perso_mobile .f1,.perso_mobile .g1,.perso_mobile .h1,.perso_mobile .i2,.perso_mobile .j2,.cl_tab_garage th,.table_perso_recel th,.table_total_compta th,.cl_tab_delit th,.cl_tab_stock tr:nth-of-type(2) th,.stats_mobile .b1,.stats_mobile .b3,.stats_mobile .c1,.stats_mobile .c3,.stats_mobile .d1,.stats_mobile .d3,.stats_mobile .e1,.stats_mobile .e3,.stats_mobile .f1,.stats_mobile .f3,.stats_mobile .g3,.stats_mobile .g1,.stats_mobile .h1,.stats_mobile .h3,.stats_mobile .i1,.stats_mobile .i3,.stats_mobile .j1,.stats_mobile .j3,.stats_mobile .k1,.stats_mobile .k3,.stats_mobile .l1,.stats_mobile .l3,.stats_mobile .m1,.stats_mobile .m3,.stats_mobile .n1,.stats_mobile .n3,.stats_mobile .o1,.stats_mobile .o3,.stats_mobile .p1,.stats_mobile .p3,.c1,.c2,.c3{
+  background: #333;
+}
+.cl_tab_gestion_compte{
+  background:white;
+}
+.vert,.transac_valide{
+  background:#408e2f!important;
+}
+.form_stock input,.tab_tarif td input,.tab_tarif th input{
+  background:#eeeeee;
+}
+.tableau_compta .ligneContenuCommande_1 th,.transac_supprime{
+  background:#850606!important;
+}
+.content{
+  box-shadow: rgba(255,255,255,0.3) 1px 1px 4px 0;
+}
+.membre,.cl_tab_gestion_compte{
+  box-shadow: rgba(0, 0, 0, .12) 0 2px 4px 0;
+}
+
+
+/*********RESPONSIVE********/
+
+/*
+@media (max-width: 640px) {
+ .burger-icon span,.pochepair {
+    background: #2a596e;
+  }
+}*/

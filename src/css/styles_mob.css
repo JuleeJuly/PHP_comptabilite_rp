@@ -1,0 +1,148 @@
+/*@media (max-width: 640px) {
+  canvas{
+    width:300px;
+    height:300px;
+  }
+  ul{
+    display:block;
+  }
+  *{
+    box-sizing:border-box;
+  }
+  body{
+    width:auto;
+    margin:0;
+    padding:0;
+  }
+  img{
+    height:auto;
+  }
+  textarea,table,td,th,code,pre{
+    word-wrap: break-word;
+  }
+   body{
+    font-size:12px;
+  }
+  table,td,th,tr{
+    margin:5px auto!important;
+    padding:2px!important;
+  }
+  div.disp_inline_bis{
+    margin:15px 5px;
+  }
+  .table_perso_recel td{
+    max-width:100px;
+  }
+  .table_perso_recel input{
+    max-width:100%;
+  }
+  .mobile{
+    display:inline-block;
+  }
+  .desktop{
+    display:none;
+  }
+  div.disp_inline{
+    display:block;
+  }
+  .content{
+    width:80%;
+    margin:15px;
+    padding:5px 0;
+    font-size:12px;
+  }
+  .sidenav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+  .sidenav a {
+    padding: 8px 4px 4px 10px;
+    text-decoration: none;
+    font-size: 16px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav a:hover {
+    color: #111;
+  }
+  .sidenav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sidenav.active {
+    left: 0;
+  }
+  .sidenav .close {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  .burger-icon span {
+    display: block;
+    width: 35px;
+    height: 5px;
+    margin: 6px 0;
+  }
+  .menu_mobile{
+    display:inline-block;
+  }
+  .menu_pc{
+    display:none;
+  }
+  
+  .cl_tab_delit input{
+    max-width:75px;
+  }
+  .pochetotal{
+    font-size: 10px;
+    width:50px;
+  }
+  .pocheimpair{
+    font-size: 10px;
+    width:50px;
+  }
+  .pochepair{
+    font-size: 10px;
+    width:50px;
+  }
+  .objectif{
+    width:90%;
+    margin:10px auto;
+  }
+  .transac_mobile{
+    grid-template-columns: 120px 120px 120px;
+    width: 360px;
+    font-size:10px;
+  }
+  .info_mobile{
+    grid-template-columns: 360px;
+    width: 360px;
+    font-size:10px;
+  }
+  .a,.transac_groupe,.transac_debit,.transac_credit,.transac_poids{
+    font-size:12px;
+  }
+  .transac_mobile label{
+    margin:2px;
+  }
+  .transac_label{
+    font-size:11px;
+  }
+  .amendes_mobile,.tableau_vente_pm{
+    display:none;
+  }
+  .tableau_pm th{
+    font-size:10px;
+  }
+}
+*/

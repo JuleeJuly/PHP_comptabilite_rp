@@ -1,0 +1,19 @@
+#restriction des adresses ip
+
+Order deny,allow
+
+#deny from all
+#Allow from x.x.x.x
+#Allow from x.x.x.x
+Allow from all
+
+#mise en place de la reecriture
+Options +FollowSymLinks
+RewriteEngine On
+
+#regles
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule (.*) index.php?query=$1 [QSA,L]
+
