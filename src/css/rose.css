@@ -24,10 +24,10 @@ table td{
 div.disp_inline_connexion,#id_connexion label,.tableau_compta_acceuil td,.cl_tab_stock,.cl_tab_garage,.cl_tab_annuaire,.tab_tarif td input,.tab_tarif th input,.stats_mobile .p4,.stats_mobile .p5,.stats_mobile .o4,.stats_mobile .o5,.stats_mobile .n4,.stats_mobile .n5,.stats_mobile .m4,.stats_mobile .m5,.stats_mobile .l4,.stats_mobile .l5,.stats_mobile .k4,.stats_mobile .k5,.stats_mobile .j4,.stats_mobile .j5,.stats_mobile .i4,.stats_mobile .i5,.stats_mobile .h5,.stats_mobile .h4,.stats_mobile .g5,.stats_mobile .g4,.stats_mobile .f5,.stats_mobile .f4,.stats_mobile .e5,.stats_mobile .e4,.stats_mobile .b4, .stats_mobile .b5,.stats_mobile .c4,.stats_mobile .c5,.stats_mobile .d4,.stats_mobile .d5,.transac_mobile, .info_mobile,.compte_total,.form_ajout label,.tablePaiement,.membre,.tab_tarif td,.cl_tab_delit td,.cl_tab_gestion_compte,.table_total_compta,.perso_mobile .h2,.perso_mobile .h3,.perso_mobile .g2,.perso_mobile .g3,.perso_mobile .f2,.perso_mobile .f3,.perso_mobile .b2,.perso_mobile .b3,.perso_mobile .c2,.perso_mobile .c3,.perso_mobile .d2,.perso_mobile .d3,.perso_mobile .e3,.perso_mobile .e2,.stats_mobile .z1,.stats_mobile .z2,.stats_mobile .y1,.stats_mobile .x1, .stats_mobile .w1, .stats_mobile .v1,.stats_mobile .y2,.stats_mobile .x2, .stats_mobile .w2, .stats_mobile .v2,.transac_groupe_divers,.table_poche tr>th:first-of-type,.tableau_compta,.cl_tab_comptabilite,h2,select,input,.content,.present:checked ~ .content,.objectif,.table_perso_recel{
   color:#490121;
 }
-.stats_mobile .a,.tableau_compta th,.bouton_plus:hover,.boutonCroix:hover,.bouton:hover,button:hover,input[type="checkbox"]:checked {
+.stats_mobile .a,.tableau_compta th,.button_plus:hover,.boutonCroix:hover,.bouton:hover,button:hover,input[type="checkbox"]:checked {
   background: #490121;
 }
-.a,.bouton_plus,.tableau_compta_acceuil th,.pochepair,button,.bouton,.boutonCroix{
+.a,.button_plus,.tableau_compta_acceuil th,.pochepair,button,.bouton,.boutonCroix{
   background: #90315b;
 }
 .perso_mobile .a0,.af,.tablePaiement th,.cl_tab_stock th,.cl_tab_annuaire th,.tab_tarif th,.cl_tab_delit tr:nth-of-type(1) th, .cl_tab_delit tr:nth-of-type(2) th,.cl_tab_gestion_compte th,.table_total_compta tr:first-of-type th,.cl_tab_comptabilite th,.table_perso_recel tr:first-of-type th{
@@ -54,10 +54,10 @@ hr{
 /*******FIXE******/
 
 
-.bouton_plus:hover,.pair,.boutonCroix,.bouton,button:hover{
+.button_plus:hover,.pair,.boutonCroix,.bouton,button:hover{
   color: white;
 }
-.cl_tab_garage th,.cl_tab_annuaire th,.tablePaiement th,.stats_mobile .a,.c1,.c2,.c3,.a,.af,.info_mobile h2,.perso_mobile .a0,.perso_mobile .a1,.perso_mobile .a2,.perso_mobile .a3,.perso_mobile .a4,.perso_mobile .b1,.perso_mobile .c1,.perso_mobile .d1,.perso_mobile .e1,.perso_mobile .f1,.perso_mobile .g1,.perso_mobile .h1,.perso_mobile .i2,.perso_mobile .j2,.cl_tab_stock th,.tab_tarif th,.cl_tab_delit th,.cl_tab_gestion_compte th,.table_total_compta th,.transac_supprime,.transac_valide,.bouton_plus,.pochepair,.transac_groupe,.tableau_compta_acceuil th,.tableau_compta th,.cl_tab_comptabilite th,.table_perso_recel th,.date,h1,button{
+.cl_tab_garage th,.cl_tab_annuaire th,.tablePaiement th,.stats_mobile .a,.c1,.c2,.c3,.a,.af,.info_mobile h2,.perso_mobile .a0,.perso_mobile .a1,.perso_mobile .a2,.perso_mobile .a3,.perso_mobile .a4,.perso_mobile .b1,.perso_mobile .c1,.perso_mobile .d1,.perso_mobile .e1,.perso_mobile .f1,.perso_mobile .g1,.perso_mobile .h1,.perso_mobile .i2,.perso_mobile .j2,.cl_tab_stock th,.tab_tarif th,.cl_tab_delit th,.cl_tab_gestion_compte th,.table_total_compta th,.transac_supprime,.transac_valide,.button_plus,.pochepair,.transac_groupe,.tableau_compta_acceuil th,.tableau_compta th,.cl_tab_comptabilite th,.table_perso_recel th,.date,h1,button{
   color: #f7f7f7;
 }
 .transac_debit,.debit,.perso_mobile .j3,.perso_mobile .i3,.perso_mobile .h4,.perso_mobile .b4,.perso_mobile .c4,.perso_mobile .d4,.perso_mobile .e4,.perso_mobile .f4,.perso_mobile .g4{

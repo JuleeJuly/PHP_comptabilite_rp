@@ -40,11 +40,22 @@ div.cont_inline{
   height:100%;
   justify-content: center;
 }
+div.cont_inline_flex{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  width:100%;
+  height:100%;
+  justify-content: center;
+}
 div.cont_inline_center{
   padding: 10px;
   margin: 10px 5px ;
   font-size:12px;
   border-radius: .25rem;
+}
+a{
+  text-decoration: none;
 }
 textarea{
   vertical-align:top;
@@ -87,6 +98,40 @@ button{
   font-weight:400;
   letter-spacing:1px;
   font-family : 'Roboto';
+}
+.transac_debit{
+  font-weight:700;
+  font-size:16px;
+}
+.transac_credit{
+  font-weight:700;
+  font-size:16px;
+}
+.transac_poids{
+  font-weight:400;
+  font-size:14px;
+}
+.transac_label{
+  font-style:italic;
+  font-size:14px;
+}
+.transac_valide{
+  padding:2px;
+  cursor:pointer;
+  border-radius:5px;
+  border:none;
+  text-align:center;
+  margin:2px auto;
+  width:80%;
+}
+.transac_supprime{
+  padding:2px;
+  cursor:pointer;
+  border-radius:5px;
+  border:none;
+  text-align:center;
+  margin:2px auto;
+  width:80%;
 }
 .content{
   padding:10px;
@@ -236,6 +281,15 @@ h2{
   height: auto;
   margin:5px auto;
   border-radius: .25rem;
+}
+.transac_mobile label{
+  margin:2px;
+}
+.transac_groupe{
+  padding:10px;
+  font-weight:400;
+  font-size:14px;
+  letter-spacing:3px;
 }
 .info_mobile{
   display:grid;
@@ -769,6 +823,51 @@ h2{
 .perso_mobile .j3{
   grid-area: j3;
 }
+.button_plus{
+  font-size: 24px;
+  border-radius: 15px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  padding: 0;
+  cursor:pointer;
+  border:none;
+}
+.hidden_2, .hidden_3, .hidden_4, .hidden_5,.hidden_6,.hidden_7,.hidden_8,.hidden_9,.hidden_10{
+  display:none;
+}
+.right{
+  display:inline-block;
+  width:55%;  
+}
+.left{
+  display:inline-block;
+  width:40%;
+}
+.left{
+  font-size:11px;
+}
+.form_transaction{
+  min-width:500px;
+}
+.form_transaction textarea{
+  min-width:auto;
+  min-height:auto;
+}
+.form_transaction input,.form_transaction select,.form_transaction textarea{
+  width:80%;
+  margin:5px auto;
+}
+.pagination{
+  padding:10px;
+  width:50%;
+  margin:auto;
+  display:inline-block;
+}
+li.page-item{
+  margin:12px 0;
+  display:inline-block
+}
 /**div.box table{
   align-self:flex-start!important;
 }*/
@@ -797,17 +896,7 @@ table{
 }
 
 
-.right{
-  display:inline-block;
-  width:55%;  
-}
-.left{
-  display:inline-block;
-  width:40%;
-}
-.left{
-  font-size:11px;
-}
+
 
 
 
@@ -1016,62 +1105,10 @@ div#disp_inline_perso{
 .conteneur_transaction{
   display:inline-block;
 }
-.bouton_plus{
-  font-size: 24px;
-  border-radius: 15px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  padding: 0;
-  cursor:pointer;
-  border:none;
-}
-.cache_2, .cache_3, .cache_4, .cache_5{
-  display:none;
-}
-.transac_mobile label{
-  margin:2px;
-}
-.transac_groupe{
-  padding:10px;
-  font-weight:400;
-  font-size:14px;
-  letter-spacing:3px;
-}
-.transac_debit{
-  font-weight:700;
-  font-size:16px;
-}
-.transac_credit{
-  font-weight:700;
-  font-size:16px;
-}
-.transac_poids{
-  font-weight:400;
-  font-size:14px;
-}
-.transac_label{
-  font-style:italic;
-  font-size:14px;
-}
-.transac_valide{
-  padding:2px;
-  cursor:pointer;
-  border-radius:5px;
-  border:none;
-  text-align:center;
-  margin:2px auto;
-  width:80%;
-}
-.transac_supprime{
-  padding:2px;
-  cursor:pointer;
-  border-radius:5px;
-  border:none;
-  text-align:center;
-  margin:2px auto;
-  width:80%;
-}
+
+
+
+
 .transac_flex{
   display:flex;
   flex-wrap: wrap;

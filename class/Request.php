@@ -152,6 +152,120 @@
 			$req->execute(array('id'=>$id,'data'=>$date));
 			return $req;
         }
+        /***********TRANSACTION***********/
+        public function recover_number_of_transactions(){
+            $req = Bdd::Cbdd()->prepare('SELECT COUNT(*) as total FROM new_transaction WHERE new_transaction.archive = 0');
+			$req->execute();
+			return $req;
+        }
+        public function recover_transactions_by_date($first, $per_page){
+            $req = Bdd::Cbdd()->prepare('SELECT new_transaction.*,new_membre.prenom,new_structure.couleur 
+				FROM new_transaction,new_membre,new_structure 
+				WHERE new_structure.nom = new_transaction.client 
+				and new_transaction.archive = 0  
+				and new_transaction.id_membre_payeur = new_membre.id 
+				ORDER BY new_transaction.data DESC, new_transaction.heure DESC 
+				LIMIT :premier, :par_page');
+    		$req->bindValue('premier',$first,PDO::PARAM_INT);
+    		$req->bindValue('par_page',$per_page,PDO::PARAM_INT);
+    		$req->execute();
+			return $req;
+        }
+        public function recover_transactions_by_group($first, $per_page){
+            $req = Bdd::Cbdd()->prepare('SELECT new_transaction.*,new_membre.prenom,new_structure.couleur 
+				FROM new_transaction,new_membre,new_structure 
+				WHERE new_structure.nom = new_transaction.client 
+				and new_transaction.archive = 0  
+				and new_transaction.id_membre_payeur = new_membre.id 
+				ORDER BY new_transaction.client, new_transaction.data DESC,new_transaction.heure DESC 
+				LIMIT :premier, :par_page');
+    		$req->bindValue('premier',$first,PDO::PARAM_INT);
+    		$req->bindValue('par_page',$per_page,PDO::PARAM_INT);
+    		$req->execute();
+			return $req;
+        }
+        public function recover_transaction_details($id){
+            $req = Bdd::Cbdd()->prepare('SELECT new_transaction_item.* FROM new_transaction_item WHERE new_transaction_item.archive = 0  and new_transaction_item.id_transaction=:ida ');
+			$req->execute(array('ida'=>$id));
+			return $req;
+        }
+         public function recover_items(){
+            $req = Bdd::Cbdd()->prepare('SELECT * 
+            FROM new_item 
+            WHERE new_item.archive = 0
+            ORDER BY id_type');
+			$req->execute();
+			return $req;
+        }
+        public function delete_pocket(){
+            $requete = Bdd::Cbdd()->prepare('UPDATE new_poche_item_membre SET quantite = 0');
+			$requete->execute();
+			$requete = Bdd::Cbdd()->prepare('UPDATE new_poche_item_vehicule SET quantite = 0');
+			$requete->execute();
+        }
+        public function recover_pocket_item_name(){
+            $req = Bdd::Cbdd()->prepare('SELECT * FROM new_poche_item ORDER BY id');
+			$req->execute();
+			return $req;
+        }
+        public function recover_pocket_item_member(){
+            $req = Bdd::Cbdd()->prepare("SELECT m.prenom,m.id, 
+            (SELECT new_poche_item_membre.quantite 
+            FROM new_poche_item_membre 
+            JOIN new_membre ON new_membre.id=new_poche_item_membre.id_membre 
+            WHERE new_poche_item_membre.id_poche_item=1 AND new_membre.id=m.id) as 'liasse',
+            (SELECT new_poche_item_membre.id 
+            FROM new_poche_item_membre 
+            JOIN new_membre ON new_membre.id=new_poche_item_membre.id_membre 
+            WHERE new_poche_item_membre.id_poche_item=1 AND new_membre.id=m.id) as 'id_liasse',
+            (SELECT new_poche_item_membre.quantite 
+            FROM new_poche_item_membre 
+            JOIN new_membre ON new_membre.id=new_poche_item_membre.id_membre 
+            WHERE new_poche_item_membre.id_poche_item=2 and new_membre.id=m.id) as 'sac',
+            (SELECT new_poche_item_membre.id 
+            FROM new_poche_item_membre 
+            JOIN new_membre ON new_membre.id=new_poche_item_membre.id_membre 
+            WHERE new_poche_item_membre.id_poche_item=2 and new_membre.id=m.id) as 'id_sac',
+            (SELECT new_poche_item_membre.quantite 
+            FROM new_poche_item_membre 
+            JOIN new_membre ON new_membre.id=new_poche_item_membre.id_membre 
+            WHERE new_poche_item_membre.id_poche_item=3 and new_membre.id=m.id) as 'march',
+            (SELECT new_poche_item_membre.id 
+            FROM new_poche_item_membre 
+            JOIN new_membre ON new_membre.id=new_poche_item_membre.id_membre 
+            WHERE new_poche_item_membre.id_poche_item=3 and new_membre.id=m.id) as 'id_march'
+            FROM new_membre as m
+            WHERE m.archive =0");
+			$req->execute();
+			return $req;
+        }
+        public function recover_pocket_item_vehicle(){
+            $req = Bdd::Cbdd()->prepare("SELECT DISTINCT iv.id_vehicule,
+			(SELECT new_poche_item_vehicule.quantite 
+            FROM new_poche_item_vehicule  
+            WHERE new_poche_item_vehicule.id_poche_item=1 AND new_poche_item_vehicule.id_vehicule=iv.id_vehicule) as 'liasse',
+            (SELECT new_poche_item_vehicule.id
+            FROM new_poche_item_vehicule  
+            WHERE new_poche_item_vehicule.id_poche_item=1 AND new_poche_item_vehicule.id_vehicule=iv.id_vehicule) as 'id_liasse',
+            (SELECT new_poche_item_vehicule.quantite 
+            FROM new_poche_item_vehicule  
+            WHERE new_poche_item_vehicule.id_poche_item=2 AND new_poche_item_vehicule.id_vehicule=iv.id_vehicule) as 'sac',
+            (SELECT new_poche_item_vehicule.id
+            FROM new_poche_item_vehicule  
+            WHERE new_poche_item_vehicule.id_poche_item=2 AND new_poche_item_vehicule.id_vehicule=iv.id_vehicule) as 'id_sac',
+            (SELECT new_poche_item_vehicule.quantite 
+            FROM new_poche_item_vehicule  
+            WHERE new_poche_item_vehicule.id_poche_item=3 AND new_poche_item_vehicule.id_vehicule=iv.id_vehicule) as 'march',
+            (SELECT new_poche_item_vehicule.id
+            FROM new_poche_item_vehicule  
+            WHERE new_poche_item_vehicule.id_poche_item=3 AND new_poche_item_vehicule.id_vehicule=iv.id_vehicule) as 'id_march'
+            FROM new_poche_item_vehicule as iv");
+            $req->execute();
+            return $req;
+        }
+
+        
+        
         
         /***********ANNUAIRE***********/
         public function recover_group_contact(){
